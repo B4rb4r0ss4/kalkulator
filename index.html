@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Simple calculator</h1>
+    </header>
+    <div class="container">
+
+        <section class="calculator">
+            <form class="buttons">
+                <div class="input"><span class="input-content"></span></div>
+                <button class="submit">=</button>
+            </form>
+            <div class="buttons">
+                <button class="button special" id="M-add">M+</button>
+                <button class="button special" id="MR">MR</button>
+                <button class="button special" id="MC">MC</button>
+                <button class="button remove">
+                    < CL</button>
+            </div>
+            <div class="buttons">
+                <button class="button normal operation">+</button>
+                <button class="button normal operation">-</button>
+                <button class="button normal operation">*</button>
+                <button class="button normal operation">/</button>
+                <button class="button normal operation">√</button>
+                <button class="button normal operation">^</button>
+            </div>
+            <div class="buttons">
+                <button class="button normal seven">7</button>
+                <button class="button normal">8</button>
+                <button class="button normal">9</button>
+            </div>
+            <div class="buttons">
+                <button class="button normal">4</button>
+                <button class="button normal">5</button>
+                <button class="button normal">6</button>
+            </div>
+            <div class="buttons">
+                <button class="button normal">1</button>
+                <button class="button normal">2</button>
+                <button class="button normal">3</button>
+            </div>
+            <div class="buttons">
+                <button class="button normal">0</button>
+                <button class="button normal">.</button>
+            </div>
+        </section>
+
+        <section class="last-operations">
+            <header class="last-operations-header">
+                <h2>Last operations:</h2>
+            </header>
+            <ul class="last-operations-ul">
+                <!-- <li><output class="operations">1 + 1 </output>=<output class="result"> 2</output></li> -->
+
+            </ul>
+        </section>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

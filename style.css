@@ -1,0 +1,181 @@
+/**************** BASE ****************/
+
+/*** VARIABLES ***/
+html {
+  --white-color: #f8f8ffaf;
+  --dark-white-color: #a5a5a5af;
+  --dark-color: #757474af;
+  --second-white-color: rgb(249, 255, 246);
+  --main-font-size: 3rem;
+  --big-font-size: 5rem;
+  --main-font-family: "Roboto", sans-serif;
+  --second-font-family: "Inconsolata", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+  background-image: url("./back.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font-family);
+}
+
+.header {
+  font-family: var(--second-font-family);
+  font-size: var(--main-font-size);
+  color: var(--second-white-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  margin-left: 10rem;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.last-operations {
+  border-radius: 4rem;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+  flex: 1;
+  height: 50rem;
+  background-image: linear-gradient(var(--white-color), #00000000);
+  color: rgb(59, 59, 59);
+}
+
+ul {
+  list-style: none;
+}
+
+/**************** COMPONENTS ****************/
+
+.input {
+  flex: 3;
+  border: none;
+  font-size: var(--main-font-size);
+  height: 10rem;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.input-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.submit {
+  flex: 1;
+  margin: 0.5rem;
+  height: 10rem;
+  font-size: var(--big-font-size);
+  font-weight: 900;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  flex: 1;
+  margin: 0.5rem;
+  border: none;
+  background-color: var(--white-color);
+  font-size: var(--main-font-size);
+  font-weight: 900;
+  height: 9rem;
+}
+
+.special {
+  background-color: var(--dark-white-color);
+}
+
+.remove {
+  background-color: var(--dark-color);
+}
+
+.special:hover {
+  background-color: var(--dark-color);
+}
+
+.remove:hover {
+  background-color: white;
+}
+
+.normal:hover {
+  background-color: var(--dark-white-color);
+}
+
+.last-operations-header {
+  background-color: var(--white-color);
+  border-radius: 5rem;
+  padding: 2rem;
+  font-family: var(--second-font-family);
+}
+
+li {
+  margin-top: 3rem;
+}
+
+/**************** MEDIA QUERIES ****************/
+
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 6px;
+  }
+
+  .container {
+    position: relative;
+    width: 90vw;
+  }
+
+  .calculator {
+    margin-left: 0;
+    flex: 80vh;
+    margin-bottom: 10rem;
+  }
+
+  .last-operations {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  html {
+    font-size: 5px;
+  }
+}
